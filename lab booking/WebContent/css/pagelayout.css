@@ -1,0 +1,178 @@
+@CHARSET "ISO-8859-1";
+<style type="text/css">
+<!--
+body{
+  margin: 0px;
+  padding: 0px;
+}
+a{
+  text-decoration: none;
+}
+a:link{
+  color: black;
+}
+a:visited{
+  color: black;
+}
+a:hover{
+  color: none;
+}
+a:active{
+  color: black;
+}
+
+#fieldsetData label {
+  display: block;
+} 
+ fieldset {
+ border: 1px solid lightseagreen;
+ text-align: left;
+}
+ legend {
+ font-weight: bold;
+ font-size: 120%; 
+ color: black;
+}
+#seitenbereich {
+  height: 98%;
+  width: 99%;
+  background-color: #CCFFFF;
+  position: absolute;
+}
+#linksoben {
+  font-size: smaller;
+  float: left;
+  margin-top:0%;
+  height: 25%;
+  width: 15%;
+  background-color: lightseagreen;
+  position: fixed;
+}
+#leftcornercontent {
+  margin-top: 15%;
+  margin-left: 5%;
+}
+#navi {
+  float: left;
+  top: 25%;
+  height: 75%;
+  width: 15%;
+  background-color: deepskyblue;
+  position: fixed;
+}
+#containercenter {
+  margin-top:0%;
+  margin-left:15%; 
+  top: 25%;
+  width: 85%;
+  height: 75%;
+  text-align: left;
+  overflow: hidden;
+  padding: 0px;
+  background-color: #CCFFFF;
+  z-index: 10;
+  position: fixed;
+  overflow:scroll;
+}
+#top {
+  margin-left: 15%;
+  background-color: mediumaquamarine;
+  height: 25%; 
+  width: 85%;
+  position: fixed;	
+}
+#loginwindow {
+  line-height:150%;
+  width: auto;
+  border: 0px solid black;
+  margin: 10% 35% 10% 35%;
+  text-align: center;
+}
+#topcontent {
+  line-height:150%;
+  border: 0px solid black;
+  margin:5% 10% 5% 10%;
+  text-align: center;
+}
+
+#registrationwindow {
+  line-height:150%;
+  width: auto;
+  border: 0px solid black;
+  margin: 10% 20% 10% 20%;
+  text-align: center;
+}
+#screen {
+  line-height:150%;
+  width: 80%;
+  border: 0px solid black;
+  margin: 3% 5% 5% 5%;
+  text-align: center;
+}
+#resulttable {
+  line-height:150%;
+  width: 80%;
+  margin: 3% 5% 5% 5%;
+  text-align: center;
+  border: 0px solid black;
+}
+ul li {
+  list-style-type: square;
+}
+li.treeMenu_opened ul {
+  display: block;
+}
+li.treeMenu_closed ul {
+  display: none;
+}
+#quicksearchtable{
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+  position: center;	
+  border: 0px solid red;
+}
+#quicksearchresult{
+  float: left;
+  width: 60%;
+  height: 80%; 
+  margin-top: 2%;
+  margin-left: 2%;	
+  border: 0px solid black;
+}
+#searchtable{
+  font-size: smaller;
+  float: left;
+  width: 90%;
+  height: auto; 
+  margin-top: 2%;
+  margin-left: 2%;	
+  border: 0px solid yellow;
+  
+}
+#mysettings{
+  float: left;
+  width: auto;
+  height: auto; 
+  margin-top: 2%;
+  margin-left: 2%;	
+  border: 0px solid black;
+}
+#searchresults{
+  float: left;
+  width: 90%;
+  height: auto; 
+  margin-top: 2%;
+  margin-left: 2%;	
+  border: 0px solid black;
+}
+#mylocations{
+  float: left;
+  width: 70%;
+  height: auto; 
+  margin-top: 2%;
+  margin-left: 2%;	
+  border: 1px solid black;	
+}
+-->
+</style>

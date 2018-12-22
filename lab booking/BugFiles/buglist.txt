@@ -1,0 +1,7 @@
+- Wenn man einmal das Passwort falsch eingegeben hat, erscheint die Fehlermeldung.
+  Wenn ich den login wieder aufrufe steht es immernoch da --> Session immernoch voll.
+
+- Das Gleiche bei Search, wenn ich einmal gesucht habe, ist die gleiche Search da
+  beim nächsten Klick.
+  
+

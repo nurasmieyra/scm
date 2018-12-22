@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_J8lXgdp8Ed6meNwzFGnLsg" name="classdiagram">
+  <packagedElement xmi:type="uml:Class" xmi:id="_VCoe4Np8Ed6meNwzFGnLsg" name="User" clientDependency="_uZLpoOAdEd6N07FUUCsMKA">
+    <ownedAttribute xmi:id="_OWQqsOloEd6ZcZBUm4sehQ" name="userID" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_PeVGAOloEd6ZcZBUm4sehQ" name="firstname" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_QzI80OloEd6ZcZBUm4sehQ" name="lastname" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_RxI2IOloEd6ZcZBUm4sehQ" name="email" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_TB4FQOloEd6ZcZBUm4sehQ" name="password" visibility="protected" aggregation="composite"/>
+    <ownedAttribute xmi:id="_UHnlUOloEd6ZcZBUm4sehQ" name="usertype" visibility="private" aggregation="composite"/>
+    <ownedOperation xmi:id="_68NBMNp-Ed6meNwzFGnLsg" name="search" visibility="private">
+      <ownedParameter xmi:id="_c5efQOAiEd6jg-r02sep3A" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_rGl4YOQLEd6pYdUygwHdTg" name="loginUser" visibility="public">
+      <ownedParameter xmi:id="_xaB8EOsAEd6aG_PG6PT6ew" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_WZyiQNqAEd6meNwzFGnLsg" name="Location">
+    <ownedAttribute xmi:id="_CBSjlOAcEd6N07FUUCsMKA" name="dst" type="_-9_JsNqAEd6meNwzFGnLsg" association="_CBSjkOAcEd6N07FUUCsMKA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CBSjluAcEd6N07FUUCsMKA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CBSjleAcEd6N07FUUCsMKA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_P6aIkOlpEd6ZcZBUm4sehQ" name="locationID" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_RJyFwOlpEd6ZcZBUm4sehQ" name="address" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_SFhVQOlpEd6ZcZBUm4sehQ" name="itemlist" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_TYQvgOlpEd6ZcZBUm4sehQ" name="openingtime" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_UlwdYOlpEd6ZcZBUm4sehQ" name="closingtime" visibility="private" aggregation="composite"/>
+    <ownedOperation xmi:id="_x1KBIOQWEd618cLq2BA4Kg" name="createLocation">
+      <ownedParameter xmi:id="_4IH0AOQWEd618cLq2BA4Kg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_-9_JsNqAEd6meNwzFGnLsg" name="Item">
+    <ownedAttribute xmi:id="_L-V4BOAbEd6N07FUUCsMKA" name="dst" type="_pZeC4NqBEd6meNwzFGnLsg" association="_L-V4AOAbEd6N07FUUCsMKA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L-V4BuAbEd6N07FUUCsMKA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L-V4BeAbEd6N07FUUCsMKA" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_eE87sOlpEd6ZcZBUm4sehQ" name="itemID" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_fQ2HEOlpEd6ZcZBUm4sehQ" name="typ" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_gONHMOlpEd6ZcZBUm4sehQ" name="configurationID" visibility="private" aggregation="composite"/>
+    <ownedOperation xmi:id="_TXg9gOQXEd618cLq2BA4Kg" name="createItem">
+      <ownedParameter xmi:id="_VzqP0OQXEd618cLq2BA4Kg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_i4SN0NqBEd6meNwzFGnLsg" name="Booking" clientDependency="_uEResOAfEd6N07FUUCsMKA">
+    <ownedAttribute xmi:id="_AXHH5Ob6Ed6WdPsFiqCqdw" name="dst" type="_WZyiQNqAEd6meNwzFGnLsg" association="_AXHH4Ob6Ed6WdPsFiqCqdw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AXHH5ub6Ed6WdPsFiqCqdw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AXHH5eb6Ed6WdPsFiqCqdw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_HhVS5Ob6Ed6WdPsFiqCqdw" name="dst" type="_-9_JsNqAEd6meNwzFGnLsg" association="_HhVS4Ob6Ed6WdPsFiqCqdw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HhVS5ub6Ed6WdPsFiqCqdw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HhVS5eb6Ed6WdPsFiqCqdw" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_uquQkOloEd6ZcZBUm4sehQ" name="bookingID" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_vzLtcOloEd6ZcZBUm4sehQ" name="start" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_wXab4OloEd6ZcZBUm4sehQ" name="recurrencetype" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_yEr2AOloEd6ZcZBUm4sehQ" name="end" visibility="private" aggregation="composite"/>
+    <ownedOperation xmi:id="_HehEcOAgEd6N07FUUCsMKA" name="createBooking">
+      <ownedParameter xmi:id="_j_Ny4OAiEd6jg-r02sep3A" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_2_pLAOQAEd6pYdUygwHdTg" name="cancelBooking">
+      <ownedParameter xmi:id="_5LJZQOQAEd6pYdUygwHdTg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pZeC4NqBEd6meNwzFGnLsg" name="Configuration">
+    <ownedAttribute xmi:id="_pXzwAOlpEd6ZcZBUm4sehQ" name="configurationID" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_q-INkOlpEd6ZcZBUm4sehQ" name="description" visibility="private" aggregation="composite"/>
+    <ownedOperation xmi:id="_p36oUOQXEd618cLq2BA4Kg" name="createConfig">
+      <ownedParameter xmi:id="_r6lqsOQXEd618cLq2BA4Kg" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_MgOKMNqCEd6meNwzFGnLsg" name="MainApplication">
+    <ownedOperation xmi:id="_MgOKNNqCEd6meNwzFGnLsg" name="closeApplication" visibility="protected">
+      <ownedParameter xmi:id="_Leh14OAjEd6jg-r02sep3A" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_Qam8INqCEd6meNwzFGnLsg" name="initializeDB" visibility="protected">
+      <ownedParameter xmi:id="_MSSOEOAjEd6jg-r02sep3A" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_XHsfMNqCEd6meNwzFGnLsg" name="cleanDB" visibility="protected">
+      <ownedParameter xmi:id="_M8RmQOAjEd6jg-r02sep3A" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_bCjLMNqCEd6meNwzFGnLsg" name="backupDB" visibility="protected">
+      <ownedParameter xmi:id="_No9GEOAjEd6jg-r02sep3A" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_rc5L0NqEEd6meNwzFGnLsg" name="Search" clientDependency="_pz3ZcOAfEd6N07FUUCsMKA">
+    <ownedAttribute xmi:id="_zikScNqEEd6meNwzFGnLsg" name="UserID" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EInt"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_qHx9kNqFEd6meNwzFGnLsg" name="Periode" aggregation="composite"/>
+    <ownedAttribute xmi:id="_qtUTkNqFEd6meNwzFGnLsg" name="Location" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_rjQdENqFEd6meNwzFGnLsg" name="ItemList" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EEList"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_v12ToNqFEd6meNwzFGnLsg" name="Configuration" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EString"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_SZsiMNqGEd6meNwzFGnLsg" name="searchInDB">
+      <ownedParameter xmi:id="_i7r5UOAiEd6jg-r02sep3A" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_B848ENqHEd6meNwzFGnLsg" name="DBClass">
+    <ownedAttribute xmi:id="_PmeXMNqHEd6meNwzFGnLsg" name="DBUser" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_VBeAQNqHEd6meNwzFGnLsg" name="DBPassword" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EString"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_WaRmQNqHEd6meNwzFGnLsg" name="DBName" aggregation="composite">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_METAMODELS/Ecore.metamodel.uml#EString"/>
+    </ownedAttribute>
+    <ownedOperation xmi:id="_HHoioNqHEd6meNwzFGnLsg" name="openDB">
+      <ownedParameter xmi:id="_qV_uwOAiEd6jg-r02sep3A" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_nzIvgNqHEd6meNwzFGnLsg" name="closeDB">
+      <ownedParameter xmi:id="_rnyGwOAiEd6jg-r02sep3A" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_AqrCENqOEd6meNwzFGnLsg" name="Message">
+    <ownedAttribute xmi:id="_4Z32cOloEd6ZcZBUm4sehQ" name="messageID" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_50VpUOloEd6ZcZBUm4sehQ" name="senderID" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_8OglsOloEd6ZcZBUm4sehQ" name="recieverID" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="__clEMOloEd6ZcZBUm4sehQ" name="messagebody" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_BtU-0OlpEd6ZcZBUm4sehQ" name="date" visibility="private" aggregation="composite"/>
+    <ownedOperation xmi:id="_RbtWUNqOEd6meNwzFGnLsg" name="readMessage">
+      <ownedParameter xmi:id="_2EyRIOAiEd6jg-r02sep3A" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_ez-X8NqOEd6meNwzFGnLsg" name="writeMessage">
+      <ownedParameter xmi:id="_5ig8QOAiEd6jg-r02sep3A" direction="return"/>
+    </ownedOperation>
+    <ownedOperation xmi:id="_fzhwcNqOEd6meNwzFGnLsg" name="createMessage">
+      <ownedParameter xmi:id="_aL0TkOsBEd6aG_PG6PT6ew" direction="return"/>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_L-V4AOAbEd6N07FUUCsMKA" name="has a" memberEnd="_L-V4AeAbEd6N07FUUCsMKA _L-V4BOAbEd6N07FUUCsMKA">
+    <ownedEnd xmi:id="_L-V4AeAbEd6N07FUUCsMKA" name="src" type="_-9_JsNqAEd6meNwzFGnLsg" association="_L-V4AOAbEd6N07FUUCsMKA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_L-V4A-AbEd6N07FUUCsMKA" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_L-V4AuAbEd6N07FUUCsMKA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CBSjkOAcEd6N07FUUCsMKA" name="has" memberEnd="_CBSjkeAcEd6N07FUUCsMKA _CBSjlOAcEd6N07FUUCsMKA">
+    <ownedEnd xmi:id="_CBSjkeAcEd6N07FUUCsMKA" name="src" type="_WZyiQNqAEd6meNwzFGnLsg" association="_CBSjkOAcEd6N07FUUCsMKA">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CBSjk-AcEd6N07FUUCsMKA" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CBSjkuAcEd6N07FUUCsMKA" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_uZLpoOAdEd6N07FUUCsMKA" supplier="_rc5L0NqEEd6meNwzFGnLsg" client="_VCoe4Np8Ed6meNwzFGnLsg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_kZ98kOAfEd6N07FUUCsMKA" name="creates in DB" supplier="_B848ENqHEd6meNwzFGnLsg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_pz3ZcOAfEd6N07FUUCsMKA" name="searches in DB" supplier="_B848ENqHEd6meNwzFGnLsg" client="_rc5L0NqEEd6meNwzFGnLsg"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_uEResOAfEd6N07FUUCsMKA" name="creates Booking" supplier="_B848ENqHEd6meNwzFGnLsg" client="_i4SN0NqBEd6meNwzFGnLsg"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9LakEOWdEd6ii_e9zmVpTQ" name="BookingPeriode">
+    <ownedAttribute xmi:id="__RyElOWmEd68bfA-kFe9BQ" name="dst" type="_WZyiQNqAEd6meNwzFGnLsg" association="__RyEkOWmEd68bfA-kFe9BQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__RyEluWmEd68bfA-kFe9BQ" value="*"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__RyEleWmEd68bfA-kFe9BQ"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_fNFd4OloEd6ZcZBUm4sehQ" name="startdate" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_gRe6IOloEd6ZcZBUm4sehQ" name="enddate" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_hOiYQOloEd6ZcZBUm4sehQ" name="providerID" visibility="private" aggregation="composite"/>
+    <ownedAttribute xmi:id="_iMo_QOloEd6ZcZBUm4sehQ" name="bookingstage" visibility="private" aggregation="composite"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__RyEkOWmEd68bfA-kFe9BQ" name="associated with" memberEnd="__RyEkeWmEd68bfA-kFe9BQ __RyElOWmEd68bfA-kFe9BQ">
+    <ownedEnd xmi:id="__RyEkeWmEd68bfA-kFe9BQ" name="src" type="_9LakEOWdEd6ii_e9zmVpTQ" association="__RyEkOWmEd68bfA-kFe9BQ">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__RyEk-WmEd68bfA-kFe9BQ" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__RyEkuWmEd68bfA-kFe9BQ" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_AXHH4Ob6Ed6WdPsFiqCqdw" name="booked location" memberEnd="_AXHH4eb6Ed6WdPsFiqCqdw _AXHH5Ob6Ed6WdPsFiqCqdw">
+    <ownedEnd xmi:id="_AXHH4eb6Ed6WdPsFiqCqdw" name="src" type="_i4SN0NqBEd6meNwzFGnLsg" association="_AXHH4Ob6Ed6WdPsFiqCqdw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_AXHH4-b6Ed6WdPsFiqCqdw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_AXHH4ub6Ed6WdPsFiqCqdw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_HhVS4Ob6Ed6WdPsFiqCqdw" name="booked items" memberEnd="_HhVS4eb6Ed6WdPsFiqCqdw _HhVS5Ob6Ed6WdPsFiqCqdw">
+    <ownedEnd xmi:id="_HhVS4eb6Ed6WdPsFiqCqdw" name="src" type="_i4SN0NqBEd6meNwzFGnLsg" association="_HhVS4Ob6Ed6WdPsFiqCqdw">
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_HhVS4-b6Ed6WdPsFiqCqdw" value="1"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_HhVS4ub6Ed6WdPsFiqCqdw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_aQy4IOlqEd6ZcZBUm4sehQ" name="BookingState">
+    <ownedAttribute xmi:id="_iy3m4OlqEd6ZcZBUm4sehQ" name="status" visibility="private" aggregation="composite"/>
+  </packagedElement>
+</uml:Package>

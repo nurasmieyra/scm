@@ -1,0 +1,38 @@
++++++++++++++++++
+WICHTIGE FUNKTION
++++++++++++++++++
+
+Datum DropDowns für Start und End
+Multiuserfähig (Booking)
+Wochenende Check
+Anmeldung verschlüsseln
+My Bookings (nur anzeigen)
+My locations (nur anzeigen)
+----------------------------
+Registrieren
+Administratives Anlegen und ver�ffentlichen von Locations
+L�schen von Bookings
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+++++++++++++++++++
+NETTE FEATURE (NUR WENN WICHTIGE FUNKTIONEN FERTIG SIND)
+++++++++++++++++++
+
+Item oder Location IDs als HyperLink darstellen, wenn man drauf klickt, sieht man dann die Configurations
+Ein Map, quasi Building -- Labs die Labs dann wiederrum als HyperLink
+Wenn ein Item oder eine Location zu gewünschtem Datum und Zeitinterval nicht verfügbar ist, Können die noch verfügbare Termine angeboten werden. Sieht AvailabilityCheck.java 

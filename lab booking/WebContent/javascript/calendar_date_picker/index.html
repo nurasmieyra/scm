@@ -1,0 +1,108 @@
+<!--
+	This html file is part an example of the Calendar Date Picker Script, downloaded from http://start.excudo.net
+
+	See calendar_date_picker.js for license details
+
+	Author: Martijn Korse
+	Website: http://devshed.excudo.net
+
+	Date: 2006-09-07 07:53:21
+//-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<head>
+ <title>Excudo Calendar Date Picker</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+ <link href="calendar.css" rel="stylesheet" type="text/css">
+ <script type="text/javascript" src="calendar_date_picker.js"></script>
+ <script type="text/javascript">
+ var cdp1 = new CalendarDatePicker();
+ var props = {
+	debug :			true,
+	excludeDays :		[6,0,1],
+	excludeDates :		['20081225','20081226','20091225','20091226'],
+	minimumFutureDate :	5,
+	formatDate :		'%m-%d-%y'
+	};
+ var cdp2 = new CalendarDatePicker(props);
+ props.formatDate = '%d-%m-%y';
+ var cdp3 = new CalendarDatePicker(props);
+ cdp3.endYear = cdp3.startYear + 1;
+ </script>
+</head>
+<body>
+
+<br>
+The example below shows the script in action:<br>
+<form>
+<h3>Example 1 - Basic</h3>
+<p>
+	Basic date-picker without any custom properties set:<br>
+	<input type="text" name="date1"><a href="#" onclick="cdp1.showCalendar(this, 'date1'); return false;"><img src="images/calendar.png" border="0"></a>
+</p>
+<h3>Example 2 - Customized</h3>
+<p>
+	Date picker with custom-properties set.<br>
+	The one on the left excludes the christmas days in 2008 and 2009, allows the user to only pick dates 5 days into the future and later
+	and doesn't allow saturday, sunday and monday to be picked<br>
+	The second one (on the right) is the same as the first one, but with only 2008 and 2009 as selectable years and the european date format instead of the american.<br>
+	<input type="text" name="date2"><a href="#" onclick="cdp2.showCalendar(this, 'date2'); return false;"><img src="images/calendar.png" border="0"></a>
+	<input type="text" id="date23"><a href="#" onclick="cdp3.showCalendar(this, 'date23'); return false;"><img src="images/calendar.png" border="0"></a><br>
+	<select><option value="1">this should hide once the 1st calendar opens</option><option>because in IE it would otherwise overlap</option></select>
+</p>
+<p>
+	It also shows it compensates for a nasty obstacle in Internet Explorer that most other calendar / date pickers don't overcome: it hides any SELECT-tags that fall underneath the calendar. Not hidding them would result in the SELECT tag being displayed on top of the calendar, which is particularly problematic if it thereby disables the close-button (X)<br>
+	<br>
+	When an existing target-element has been selected, this element (which should be an INPUT tag) will receive the choosen date. When the target element is specified as false or doesn't exist, the calendar will not allow you to pick a date (because it lacks a target to copy it too). It will open up though, so it can be used as a normal calendar.<br>
+	<br>
+	The calendar will show which date has already been choosen (in the target element) if applicable and also the current date. All styles can be set in a stylehseet, so the calendar can have every desired appearance.<br>
+</p>
+<h3>Example 3 - Just a calendar</h3>
+<p>
+	And finally just a calendar, using the settings of the first one (no custom settings) without any pickable dates: <a href="#" onclick="cdp1.showCalendar(this, false);"><img src="images/calendar.png" border="0"></a>
+
+</p>
+<br><br><br><br><br>
+</form>
+
+<!--
+	Start of the Calendar
+
+	Script written by Martijn Korse
+
+	http://devshed.excudo.net
+//-->
+
+<table id="calendarTable">
+<tbody id="calendarTableHead">
+<tr>
+ <td colspan="4" align="left">
+	<select id="selectMonth">
+	 <option value="0">January</option>
+	 <option value="1">February</option>
+	 <option value="2">March</option>
+	 <option value="3">April</option>
+	 <option value="4">May</option>
+	 <option value="5">June</option>
+	 <option value="6">July</option>
+	 <option value="7">August</option>
+	 <option value="8">September</option>
+	 <option value="9">October</option>
+	 <option value="10">November</option>
+	 <option value="11">December</option>
+	</select>
+ </td>
+ <td colspan="2" align="center"><select id="selectYear"></select></td>
+ <td align="right"><a href="#" id="closeCalendarLink">X</a></td>
+</tr>
+</tbody>
+<tbody id="calendarTableDays">
+<tr id="calenderDaysIndex">
+ <td>Su</td><td>Mo</td><td>Tu</td><td>We</td><td>Thu</td><td>Fr</td><td>Sa</td>
+</tr>
+</tbody>
+<tbody id="calendar"></tbody>
+</table>
+<!-- End of the Calendar //-->
+
+</body>
+</html>
