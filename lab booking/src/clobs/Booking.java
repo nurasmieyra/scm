@@ -116,7 +116,7 @@ public class Booking {
 	 */
 	public String getAbsoluteBookingEnd() {
 		
-		String end = null;
+		String end = null =0 ;
 		DBConnection db = new DBConnection();
 		String query = "SELECT  date_format(max(end), '%Y-%m-%d %H:%i:%s') as end FROM bookings where booking_nr = " + this.bookingID;
 		ResultSet res = db.excuteQ(query);
